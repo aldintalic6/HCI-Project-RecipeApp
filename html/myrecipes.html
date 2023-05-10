@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Recipes</title>
+	<link rel="stylesheet" type="text/css" href="../css/recipescss.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css”>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="recipes.html">RECIPES</a></li>
+				<li><a href="myrecipes.html">MY RECIPES</a></li>
+			</ul>
+		</nav>  
+        <div class="logo">
+            <img src="../imgs/logo2.png" alt="Logo">
+          </div>
+	</header>
+
+  <section>
+    <h1 class="featured-products">Favorited Recipes</h1>
+    <div class="line"></div>
+    <div class="card-container">
+
+<style>
+  .featured-products {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .line {
+    width: 33%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: black;
+  }
+</style>
+
+	<main>
+		  <div id="wrap">
+			<div id="columns" class="columns_3">
+				<ol id="list">
+
+		  <figure>
+		 <div class="recipe-card">
+            <div class="remove-favorite">
+                <button class="remove-btn">&times;</button>
+              </div>
+  <img src="../imgs/garlic-grilled steak.jpeg">
+  <figcaption class="featuredtitle">Garlic-Grilled Steak</figcaption>
+  <i class="fas fa-clock"></i>
+  <span class="price">Prep Time: 30 min</span>
+  <a class="button" data-id="1">View Recipe</a>
+
+  <div id="recipe-details-1" class="recipe-details">       
+    <p>Ingredients:</p>
+    <ul>
+      <li>1 lb flank steak</li>
+      <li>3 cloves garlic, minced</li>
+      <li>1 tbsp olive oil</li>
+      <li>1 tsp salt</li>
+      <li>1/2 tsp black pepper</li>
+	  <br>
+    </ul>
+    <p>Instructions:</p>
+    <ol>
+      <li>Preheat grill to high heat.</li>
+      <li>In a small bowl, mix together garlic, olive oil, salt, and black pepper.</li>
+      <li>Rub the garlic mixture all over the steak.</li>
+      <li>Grill the steak for 5-7 minutes per side, or until desired doneness is reached.</li>
+      <li>Let the steak rest for 5 minutes before slicing and serving.</li>
+    </ol>
+    <button class="close-btn" data-id="1">Close</button>
+  </div>
+</div>
+</figure>
+
+		  
+			<figure>
+        <div class="recipe-card">
+            <div class="remove-favorite">
+                <button class="remove-btn">&times;</button>
+              </div>
+			<img src="../imgs/chicken breast.jpeg">
+			<figcaption class = "featuredtitle">Chicken Breasts</figcaption>
+			<i class="fas fa-clock"></i>
+                    <span class = "price">Prep Time: 25 min</span>
+			<a class="button">View Recipe</a>
+			</figure>
+			
+			<figure>
+        <div class="recipe-card">
+            <div class="remove-favorite">
+                <button class="remove-btn">&times;</button>
+              </div>
+			<img src="../imgs/cream cheese dessert.jpeg">
+			<figcaption class = "featuredtitle">Cream Cheese</figcaption>
+			<i class="fas fa-clock"></i>
+                    <span class = "price">Prep Time: 25 min</span>
+			<a class="button">View Recipe</a>
+			</figure>
+
+    <style>
+    .remove-btn {
+        color: black;
+        border: 1px solid red;
+       visibility: visible;
+        top: 10px;
+        right: 10px;
+        font-size: 24px; /* increase font size */
+        background: none;
+        border: none;
+        cursor: pointer;
+        }
+
+    .remove-btn:hover {
+        color: red;
+        border: 1px solid red;
+  }
+    </style>
+
+			
+	</main>
+	<footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>© 2023 Recipe App, All Rights Reserved</h3>
+      </div>
+      
+    </div>
+  </footer>
+	<script src = "../js/script.js"></script>
+</body>
+</html>
